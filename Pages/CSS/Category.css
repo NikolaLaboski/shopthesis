@@ -1,0 +1,65 @@
+/* Styling for the category component */
+.category {
+    padding: 2.5rem;
+    /* Padding around the category component */
+}
+
+/* Styling for the index section within the category component */
+.category-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4.375rem;
+    /* Top padding for spacing */
+    padding-bottom: 4.375rem;
+    /* Bottom padding for spacing */
+}
+
+/* Styling for the sort button within the index section */
+.category-sort button {
+    background-color: #fff;
+    /* Background color for the button */
+    color: black;
+    /* Text color for the button */
+    border: 1px solid #ccc;
+    /* Border style for the button */
+    padding: 0.313rem 0.625rem;
+    /* Padding for the button */
+    cursor: pointer;
+    /* Cursor style for interaction */
+}
+
+/* Styling for the products section within the category component */
+.category-products {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allowing products to wrap to the next row */
+    padding-bottom: 4.375rem;
+    /* Bottom padding for spacing */
+}
+
+/* Styling for each individual product within the products section */
+.category-products>div {
+    flex: 1 0 21%;
+    /* Adjusting size to show 4 items per row */
+    margin: 0.625rem;
+    /* Margin around each product for spacing */
+}
+
+/* Styling for the "Load more" button section */
+.category-seemore {
+    text-align: center;
+    /* Centering the button */
+    margin-top: 1.25rem;
+    /* Top margin for spacing */
+}
+
+/* Styling for the "Load more" button */
+.category-seemore button {
+    padding: 0.625rem 1.25rem;
+    /* Padding for the button */
+    font-size: 1rem;
+    /* Font size for the button text */
+    cursor: pointer;
+    /* Cursor style for interaction */
+}

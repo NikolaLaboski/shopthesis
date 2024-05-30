@@ -1,0 +1,95 @@
+/* Styling for the product detail container */
+.product-detail {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    /* Padding around the product detail */
+    border: 1px solid #e0e0e0;
+    /* Border color */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: #fff;
+    /* Background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Box shadow for depth */
+    margin-top: 50px;
+    /* Top margin */
+}
+
+/* Styling for the product image */
+.product-detail img {
+    width: 500px;
+    /* Fixed width for the image */
+    height: auto;
+    /* Auto height to maintain aspect ratio */
+    border-radius: 8px;
+    /* Rounded corners */
+    margin-right: 20px;
+    /* Right margin */
+}
+
+/* Styling for the product detail information */
+.product-detail-info {
+    flex-grow: 1;
+    /* Allowing the detail info to grow */
+}
+
+/* Styling for the product title */
+.product-detail-info h2 {
+    font-size: 1.5rem;
+    /* Font size */
+    margin-bottom: 10px;
+    /* Bottom margin */
+}
+
+/* Styling for paragraphs within product detail */
+.product-detail-info p {
+    font-size: 1rem;
+    /* Font size */
+    margin-bottom: 10px;
+    /* Bottom margin */
+}
+
+/* Styling for the product price */
+.product-detail-info .price {
+    font-size: 1.2rem;
+    /* Font size */
+    font-weight: bold;
+    /* Bold font */
+    color: #1d4833;
+    /* Price color */
+}
+
+/* Styling for the product category */
+.product-detail-info .category {
+    font-size: 0.8rem;
+    /* Font size */
+    color: #6c757d;
+    /* Category color */
+}
+
+/* Styling for the add to cart button */
+.detail-cartBtn {
+    padding: 10px 20px;
+    /* Padding */
+    font-size: 1rem;
+    /* Font size */
+    background-color: #1d4833;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor style */
+    transition: background-color 0.3s;
+    /* Smooth transition on hover */
+}
+
+/* Styling for the add to cart button on hover */
+.detail-cartBtn:hover {
+    background-color: #33be3a;
+    /* Darker background color on hover */
+}

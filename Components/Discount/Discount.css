@@ -1,0 +1,177 @@
+.discount-container {
+    position: relative;
+    /* Sets the position relative to the parent */
+    display: flex;
+    /* Sets the display property to flex */
+    flex-direction: column;
+    /* Sets the direction of the flex container to column */
+    justify-content: center;
+    /* Aligns flex items along the center of the main axis */
+    align-items: center;
+    /* Aligns flex items along the center of the cross axis */
+    width: 100%;
+    /* Sets the width to 100% of the parent container */
+    min-height: 100vh;
+    /* Sets the minimum height to 100% of the viewport height */
+    text-align: center;
+    /* Aligns text to the center */
+    overflow: hidden;
+    /* Hides content that overflows its container */
+    color: white;
+    /* Sets the text color to white */
+    padding: 1.25rem;
+    /* Sets padding around the content */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
+}
+
+.background-video {
+    position: absolute;
+    /* Sets the position absolute */
+    top: 0;
+    /* Aligns the element to the top */
+    left: 0;
+    /* Aligns the element to the left */
+    width: 100%;
+    /* Sets the width to 100% of the parent container */
+    height: 100%;
+    /* Sets the height to 100% of the parent container */
+    object-fit: cover;
+    /* Scales the video as large as possible */
+    z-index: -2;
+    /* Sets the stacking order of the element */
+}
+
+.overlay {
+    position: absolute;
+    /* Sets the position absolute */
+    top: 0;
+    /* Aligns the element to the top */
+    left: 0;
+    /* Aligns the element to the left */
+    right: 0;
+    /* Aligns the element to the right */
+    bottom: 0;
+    /* Aligns the element to the bottom */
+    background: rgba(0, 0, 0, 0.5);
+    /* Sets the background color with opacity */
+    z-index: -1;
+    /* Sets the stacking order of the element */
+}
+
+.content {
+    position: relative;
+    /* Sets the position relative */
+    z-index: 1;
+    /* Sets the stacking order of the element */
+}
+
+.discount-container h2 {
+    font-size: 2.5rem;
+    /* Sets the font size */
+    margin-bottom: 1.25rem;
+    /* Sets the bottom margin */
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.7);
+    /* Adds a text shadow */
+    animation: bounce 2s infinite;
+    /* Adds an animation effect */
+}
+
+.discount-container p {
+    font-size: 1.2rem;
+    /* Sets the font size */
+    margin-top: 0.625rem;
+    /* Sets the top margin */
+    animation: bounce 2s infinite;
+    /* Adds an animation effect */
+}
+
+.discount-container button {
+    margin-top: 1.25rem;
+    /* Sets the top margin */
+    padding: 0.938rem 1.875rem;
+    /* Sets the padding */
+    font-size: 1.2rem;
+    /* Sets the font size */
+    background-color: #292928;
+    /* Sets the background color */
+    color: #fff;
+    /* Sets the text color */
+    border: none;
+    /* Removes the border */
+    border-radius: 3.125rem;
+    /* Sets the border radius */
+    cursor: pointer;
+    /* Sets the cursor to pointer */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    /* Adds a box shadow */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Adds transition effects */
+    animation: bounce 2s infinite;
+    /* Adds an animation effect */
+}
+
+.discount-container button:hover {
+    background: linear-gradient(45deg, #2f302f, #63808d);
+    /* Sets the background color on hover */
+    box-shadow: 0 0.25rem 0.938rem rgba(0, 0, 0, 0.3);
+    /* Adds a box shadow on hover */
+    color: azure;
+    /* Sets the text color on hover */
+    transform: translateY(-5px);
+    /* Transforms the button on hover */
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        /* Transforms the element along the Y-axis */
+    }
+
+    40% {
+        transform: translateY(-30px);
+        /* Transforms the element along the Y-axis */
+    }
+
+    60% {
+        transform: translateY(-15px);
+        /* Transforms the element along the Y-axis */
+    }
+}
+
+/*Adjusting css for responsiveness*/
+@media (max-width: 768px) {
+    .discount-container h2 {
+        font-size: 2rem;
+    }
+
+    .discount-container p {
+        font-size: 1rem;
+    }
+
+    .discount-container button {
+        font-size: 1rem;
+        padding: 0.625rem 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .discount-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .discount-container p {
+        font-size: 0.9rem;
+    }
+
+    .discount-container button {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.938rem;
+    }
+}
+

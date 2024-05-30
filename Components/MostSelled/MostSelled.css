@@ -1,0 +1,22 @@
+/* Container for most sold products */
+.mostsoldproducts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem;
+    /* Padding around the products */
+    margin-bottom: 2rem;
+    /* Bottom margin for spacing */
+}
+
+/* Title styling */
+.product-title {
+    color: #292928;
+    /* Title color */
+    text-align: center;
+    /* Center-aligning the title */
+    margin-bottom: 4rem;
+    /* Bottom margin for spacing */
+    margin-top: 4rem;
+    /* Top margin for spacing */
+}

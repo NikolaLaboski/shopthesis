@@ -1,0 +1,186 @@
+/* Styling for the Navbar */
+.navbar {
+    /* Flexbox layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Padding and shadow */
+    padding: 0.938rem;
+    box-shadow: 0 1px 3px -2px rgb(250, 250, 250);
+    /* Background color and font */
+    background-color: #383838;
+    font-family: fantasy;
+}
+
+/* Styling for the logo section */
+.nav-logo {
+    /* Flexbox layout */
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Styling for the logo text */
+.nav-logo p {
+    color: #e8e6e6;
+    font-size: 2.5rem;
+}
+
+/* Styling for the navigation menu */
+.nav-menu {
+    /* Flexbox layout */
+    display: flex;
+    align-items: center;
+    gap: 3.125rem;
+    /* Font size */
+    font-size: 1.25rem;
+}
+
+/* Styling for individual menu items */
+.nav-menu li {
+    /* Flexbox layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.188rem;
+    /* Cursor */
+    cursor: pointer;
+}
+
+/* Styling for the horizontal divider */
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 0.188rem;
+    border-radius: 10%;
+    background-color: azure;
+}
+
+/* Styling for the login and cart section */
+.loginVsCart {
+    /* Flexbox layout */
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    position: relative;
+    padding: 0.938rem;
+}
+
+/* Styling for the login button */
+.loginVsCart button {
+    width: 7rem;
+    height: 2.5rem;
+    /* Button styles */
+    outline: none;
+    border: 1px solid azure;
+    border-radius: 4.6rem;
+    background: #fff;
+    color: #292928;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: fantasy;
+    overflow-y: hidden;
+}
+
+/* Styling for the active state of the login button */
+.loginVsCart button:active {
+    background-color: #292928;
+    color: azure;
+}
+
+/* Styling for the cart counter */
+.cart-counter {
+    width: 1.38rem;
+    height: 1.38rem;
+    /* Flexbox layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* Font size and color */
+    font-size: 0.9rem;
+    color: #292928;
+    /* Background color and position */
+    background-color: azure;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+}
+
+/* Styling for the link styles */
+.link-style {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Styling for the mobile menu toggle button */
+.nav-menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Media query for responsive design */
+@media (max-width: 1040px) {
+
+    /* Styling for the navigation menu on smaller screens */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #383838;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+    }
+
+    /* Styling for the open state of the navigation menu */
+    .nav-menu.open {
+        display: flex;
+    }
+
+    /* Styling for the mobile menu toggle button */
+    .nav-menu-toggle {
+        display: block;
+    }
+
+    /* Styling for the login and cart section on smaller screens */
+    .loginVsCart {
+        gap: 1rem;
+        flex-direction: column;
+        padding: 1rem;
+        position: relative;
+    }
+
+    /* Styling for the logo text on smaller screens */
+    .nav-logo p {
+        font-size: 1.5rem;
+    }
+
+    /* Styling for the login button on smaller screens */
+    .loginVsCart button {
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    /* Styling for the cart counter on smaller screens */
+    .cart-counter {
+        width: 1.1rem;
+        height: 1.1rem;
+        font-size: 0.75rem;
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+}
+

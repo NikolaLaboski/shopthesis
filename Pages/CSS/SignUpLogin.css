@@ -1,0 +1,115 @@
+/* Styling for the container of the login/signup form */
+.login-signup-container {
+    width: 100%;
+    /* Setting width to 100% */
+    max-width: 25rem;
+    /* Setting maximum width */
+    margin: 3.125rem auto;
+    /* Setting margin for centering horizontally */
+    padding: 1.25rem;
+    /* Adding padding */
+    border: 1px solid #ccc;
+    /* Adding border with color */
+    border-radius: 0.5rem;
+    /* Adding border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adding box shadow */
+    background-color: #fff;
+    /* Setting background color to white */
+}
+
+/* Styling for the heading inside the container */
+.login-signup-container h2 {
+    margin-bottom: 1.25rem;
+    /* Adding margin bottom */
+    text-align: center;
+    /* Aligning text to center */
+}
+
+/* Styling for form groups */
+.login-signup-form .form-group {
+    margin-bottom: 0.938rem;
+    /* Adding margin bottom */
+}
+
+/* Styling for labels inside form */
+.login-signup-form label {
+    display: block;
+    /* Displaying labels as block elements */
+    margin-bottom: 0.313rem;
+    /* Adding margin bottom */
+    font-weight: bold;
+    /* Setting font weight to bold */
+}
+
+/* Styling for input fields */
+.login-signup-form input {
+    width: 100%;
+    /* Setting width to 100% */
+    padding: 0.625rem;
+    /* Adding padding */
+    border: 1px solid #ccc;
+    /* Adding border with color */
+    border-radius: 0.25rem;
+    /* Adding border radius */
+    box-sizing: border-box;
+    /* Including padding and border in width calculation */
+}
+
+/* Styling for submit button */
+.submit-btn {
+    width: 100%;
+    /* Setting width to 100% */
+    padding: 0.625rem;
+    /* Adding padding */
+    border: none;
+    /* Removing border */
+    border-radius: 0.25rem;
+    /* Adding border radius */
+    background-color: #28a745;
+    /* Setting background color */
+    color: #fff;
+    /* Setting text color */
+    font-size: 1rem;
+    /* Setting font size */
+    cursor: pointer;
+    /* Setting cursor to pointer */
+    transition: background-color 0.3s ease;
+    /* Adding transition effect */
+}
+
+/* Styling for submit button on hover */
+.submit-btn:hover {
+    background-color: #218838;
+    /* Changing background color on hover */
+}
+
+/* Styling for toggle button */
+.toggle-btn {
+    margin-top: 0.625rem;
+    /* Adding margin top */
+    width: 100%;
+    /* Setting width to 100% */
+    padding: 0.625rem;
+    /* Adding padding */
+    border: none;
+    /* Removing border */
+    border-radius: 0.25rem;
+    /* Adding border radius */
+    background-color: #007bff;
+    /* Setting background color */
+    color: #fff;
+    /* Setting text color */
+    font-size: 1rem;
+    /* Setting font size */
+    cursor: pointer;
+    /* Setting cursor to pointer */
+    transition: background-color 0.3s ease;
+    /* Adding transition effect */
+}
+
+/* Styling for toggle button on hover */
+.toggle-btn:hover {
+    background-color: #0056b3;
+    /* Changing background color on hover */
+}

@@ -1,0 +1,159 @@
+/* Footer container */
+.footer-container {
+    /* Background color */
+    background-color: #333;
+    /* Text color */
+    color: #fff;
+    /* Flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Center align text */
+    text-align: center;
+    /* Padding */
+    padding: 20px;
+}
+
+/* Orders section */
+.orders {
+    /* Flexbox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* Margin */
+    margin-bottom: 20px;
+    /* Background color */
+    background-color: darkcyan;
+}
+
+/* Order item */
+.order {
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* Padding */
+    padding: 20px;
+    /* Text color */
+    color: #f9f9f9;
+    /* Center align text */
+    text-align: center;
+    /* Height */
+    height: 250px;
+    /* Maximum width */
+    max-width: 300px;
+    /* Margin */
+    margin-bottom: 20px;
+}
+
+/* Paragraph inside order */
+.order p {
+    /* Margin */
+    margin-top: 1rem;
+}
+
+/* Image inside order */
+.order img {
+    /* Maximum width */
+    max-width: 128px;
+    /* Responsive height */
+    height: auto;
+}
+
+/* Footer section */
+.footer-section {
+    /* Flexbox */
+    flex: 1;
+    /* Margin */
+    margin: 0.625rem;
+    /* Minimum width */
+    min-width: 12.5rem;
+    /* Margin */
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+/* Heading and paragraph inside footer section */
+.footer-section h3,
+.footer-section p {
+    /* Margin */
+    margin-bottom: 0.625rem;
+    /* Text color */
+    color: #fff;
+}
+
+/* Links inside footer */
+.footer-links {
+    /* Text color */
+    color: #fff;
+    /* Remove underline */
+    text-decoration: none;
+}
+
+/* Hover effect on links inside footer */
+.footer-links:hover {
+    /* Text color on hover */
+    color: #259625;
+}
+
+/* Unordered list inside footer section */
+.footer-section ul {
+    /* Remove list styling */
+    list-style: none;
+    /* Remove padding */
+    padding-left: 0;
+}
+
+/* List items inside footer section */
+.footer-section li {
+    /* Margin */
+    margin-bottom: 0.313rem;
+}
+
+/* Social icons section */
+.social-icons {
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    /* Padding */
+    padding: 0.4rem;
+}
+
+/* Social icon links */
+.social-icons a {
+    /* Margin */
+    margin: 0 5px;
+    /* Font size */
+    font-size: 1.5rem;
+    /* Background color */
+    background-color: #fff;
+    /* Remove underline */
+    text-decoration: none;
+    /* Transition effect */
+    transition: color 0.3s;
+}
+
+/* Hover effect on social icon links */
+.social-icons a:hover {
+    /* Text color on hover */
+    color: #358622;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    /* Flex direction column for smaller screens */
+    .footer-container {
+        flex-direction: column;
+        /* Center align items */
+        align-items: center;
+    }
+
+    /* Center align text for smaller screens */
+    .footer-section {
+        text-align: center;
+    }
+}

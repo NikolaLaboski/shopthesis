@@ -1,0 +1,164 @@
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Landing page styles */
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Background image */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/1670770/pexels-photo-1670770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Content container */
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Text section styles */
+.text-section {
+    text-align: left;
+    /* Align text to start from left */
+    color: #fff;
+    padding-left: 1.25rem;
+    /* Add padding for text */
+    animation: fadeInUp 2s ease-in-out;
+    /* Initial animation */
+}
+
+.text-section h1,
+.text-section h2,
+.text-section p,
+.landing-button {
+    opacity: 0;
+    /* Start with hidden elements */
+    animation: fadeIn 1s forwards;
+    
+    /* Fade-in animation */
+}
+
+.text-section h1 {
+    font-size: 4rem;
+    margin: 1.25rem 0;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+    animation-delay: 0.5s;
+    /* Delay for staggered effect */
+    transition: transform 0.5s ease;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    animation-delay: 0.3s;
+    /* Delay for staggered effect */
+    transition: transform 0.5s ease;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    animation-delay: 0.7s;
+    /* Delay for staggered effect */
+    transition: transform 0.5s ease;
+}
+
+/* Hover effects for text */
+.text-section h1:hover,
+.text-section h2:hover,
+.text-section p:hover {
+    transform: scale(1.05);
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Button styles */
+.landing-button {
+    margin-top: 2%;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.2rem;
+    background-color: #292928;
+    border: none;
+    color: #fff;
+    border-radius: 0.313rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation-delay: 1s;
+    /* Delay for staggered effect */
+}
+
+.landing-button:hover {
+    background: linear-gradient(45deg, #2f302f, #63808d);
+    /* Gradient background on hover */
+    box-shadow: 0 0.25rem 0.938rem rgba(0, 0, 0, 0.3);
+    /* Add shadow on hover */
+    color: azure;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-in-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .text-section {
+        padding-left: 0.625rem;
+        /* Reduce left padding on smaller screens */
+    }
+
+    .text-section h1 {
+        font-size: 2.5rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .text-section h2 {
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .landing-button {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+}

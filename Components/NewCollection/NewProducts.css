@@ -1,0 +1,23 @@
+/* Styles for the container displaying new products */
+.newproduct-container {
+    display: flex;
+    /* Displaying items in a flex layout */
+    flex-wrap: wrap;
+    /* Allowing items to wrap to the next line if needed */
+    justify-content: space-around;
+    /* Distributing items evenly along the main axis */
+    padding: 1rem;
+    /* Adding padding around the container */
+}
+
+/* Styles for the product introduction section */
+.product-intro {
+    color: #292928;
+    /* Setting text color */
+    text-align: center;
+    /* Centering text */
+    margin-bottom: 1rem;
+    /* Adding bottom margin for spacing */
+    margin-top: 3rem;
+    /* Adding top margin for spacing */
+}

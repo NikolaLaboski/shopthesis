@@ -1,0 +1,68 @@
+/* Styles for the description box */
+.description-box {
+    margin: 20px 0;
+    /* Adds vertical margin to separate from other elements */
+    padding: 20px;
+    /* Adds padding inside the box for spacing */
+    border: 1px solid #ddd;
+    /* Sets a light gray border around the box */
+    border-radius: 5px;
+    /* Rounds the corners of the box */
+    background-color: #f9f9f9;
+    /* Sets a light background color */
+}
+
+/* Styles for the heading within the description box */
+.description-box h2 {
+    font-size: 24px;
+    /* Sets the font size for the heading */
+    margin-bottom: 10px;
+    /* Adds margin below the heading */
+}
+
+/* Styles for the paragraph within the description box */
+.description-box p {
+    font-size: 16px;
+    /* Sets the font size for the paragraph */
+    margin-bottom: 20px;
+    /* Adds margin below the paragraph */
+}
+
+/* Styles for the rating section */
+.rating {
+    margin-top: 20px;
+    /* Adds margin above the rating section */
+}
+
+/* Styles for the heading within the rating section */
+.rating h3 {
+    font-size: 18px;
+    /* Sets the font size for the rating heading */
+    margin-bottom: 10px;
+    /* Adds margin below the rating heading */
+}
+
+/* Styles for the container of rating stars */
+.rating-stars {
+    display: flex;
+    /* Aligns the stars horizontally in a row */
+}
+
+/* Styles for individual star elements */
+.star {
+    font-size: 24px;
+    /* Sets the font size for the stars */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover to indicate clickable */
+    color: #ddd;
+    /* Sets the default color of stars to light gray */
+    margin-right: 5px;
+    /* Adds spacing between stars */
+}
+
+/* Styles for filled (selected) star elements */
+.star.filled {
+    color: #f39c12;
+    /* Sets the color of filled stars to a gold-like color */
+}
+

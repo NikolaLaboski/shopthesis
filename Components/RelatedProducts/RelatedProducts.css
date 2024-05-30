@@ -1,0 +1,21 @@
+.related-products {
+    /* Add margin to the top and bottom of the related-products section */
+    margin: 1.25rem 0;
+    /* Add padding inside the related-products section */
+    padding: 1.875rem;
+}
+
+.related-products h2 {
+    /* Add margin to the bottom of the heading */
+    margin-bottom: 0.625rem;
+}
+
+.related-products-list {
+    /* Use flexbox to display related products in a flexible layout */
+    display: flex;
+    /* Allow the flex items to wrap to the next line if necessary */
+    flex-wrap: wrap;
+    /* Add a gap between each related product */
+    gap: 1.25rem;
+}
+

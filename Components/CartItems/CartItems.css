@@ -1,0 +1,237 @@
+/* Styles for the cart container */
+.cart-container {
+    padding: 1.875rem;
+    /* Adds padding around the cart items */
+    background-color: #f8f9fa;
+    /* Sets the background color */
+    border-radius: 0.5rem;
+    /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a shadow effect */
+    max-width: 56.25rem;
+    /* Sets the maximum width */
+    margin: 0 auto;
+    /* Centers the container horizontally */
+}
+
+/* Styles for the heading */
+.cart-container h2 {
+    font-size: 2rem;
+    /* Sets the font size */
+    margin-bottom: 1.25rem;
+    /* Adds space below the heading */
+}
+
+/* Styles for the clear cart button */
+.clear-cart-btn {
+    background-color: #dc3545;
+    /* Sets the background color */
+    color: #fff;
+    /* Sets the text color */
+    border: none;
+    /* Removes the border */
+    padding: 0.625rem 1.25rem;
+    /* Adds padding */
+    border-radius: 0.313rem;
+    /* Rounds the corners */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s;
+    /* Adds transition effect */
+    margin-top: 1.25rem;
+    /* Adds space at the top */
+    display: block;
+    /* Makes the button a block element */
+    text-align: center;
+    /* Centers the text */
+}
+
+/* Hover effect for the clear cart button */
+.clear-cart-btn:hover {
+    background-color: #c82333;
+    /* Changes background color on hover */
+}
+
+/* Styles for each cart item */
+.cart-item {
+    display: flex;
+    /* Displays items in a row */
+    flex-direction: row;
+    /* Sets the direction to row */
+    align-items: center;
+    /* Aligns items vertically */
+    margin-bottom: 1.25rem;
+    /* Adds space below each item */
+    padding: 0.625rem;
+    /* Adds padding */
+    border: 1px solid #e0e0e0;
+    /* Adds border */
+    border-radius: 0.5rem;
+    /* Rounds the corners */
+    background-color: #fff;
+    /* Sets the background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adds shadow effect */
+}
+
+/* Styles for the item image */
+.cart-item-image {
+    max-width: 15.600rem;
+    min-width: 15.600rem;
+    /* Sets the width */
+    height: 13.625rem;
+    /* Maintains aspect ratio */
+    border-radius: 0.5rem;
+    /* Rounds the corners */
+    margin-right: 1.25rem;
+    /* Adds space to the right */
+    transition: transform 0.3s ease-in-out;
+    /* Adds transition effect */
+}
+
+/* Styles for the details of each cart item */
+.cart-item-details {
+    flex-grow: 1;
+    /* Allows item to grow to fill available space */
+}
+
+/* Styles for the title of each cart item */
+.cart-item-details h3 {
+    font-size: 1.2rem;
+    /* Sets the font size */
+    margin-bottom: 0.625rem;
+    /* Adds space below the title */
+}
+
+/* Styles for price and total of each cart item */
+.cart-item-price,
+.cart-item-total {
+    font-size: 1rem;
+    /* Sets the font size */
+    margin-bottom: 0.625rem;
+    /* Adds space below each */
+}
+
+/* Styles for the quantity controls */
+.quantity-controls {
+    display: flex;
+    /* Displays controls in a row */
+    align-items: center;
+    /* Aligns items vertically */
+}
+
+/* Styles for the quantity buttons */
+.quantity-btn {
+    background-color: #007bff;
+    /* Sets the background color */
+    color: #fff;
+    /* Sets the text color */
+    border: none;
+    /* Removes the border */
+    padding: 0.313rem 0.625rem;
+    /* Adds padding */
+    border-radius: 0.313rem;
+    /* Rounds the corners */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s;
+    /* Adds transition effect */
+    margin: 0 0.313rem;
+    /* Adds space around buttons */
+}
+
+/* Hover effect for quantity buttons */
+.quantity-btn:hover {
+    background-color: #0056b3;
+    /* Changes background color on hover */
+}
+
+/* Styles for the cart summary */
+.cart-summary {
+    display: flex;
+    /* Displays summary items in a row */
+    justify-content: space-between;
+    /* Spaces items evenly */
+    align-items: center;
+    /* Aligns items vertically */
+    padding-top: 1.25rem;
+    /* Adds space at the top */
+    border-top: 1px solid #e0e0e0;
+    /* Adds border at the top */
+    margin-top: 1.25rem;
+    /* Adds space at the top */
+}
+
+/* Styles for the payment button */
+.payment-btn {
+    background-color: #28a745;
+    /* Sets the background color */
+    color: #fff;
+    /* Sets the text color */
+    border: none;
+    /* Removes the border */
+    padding: 0.625rem 1.25rem;
+    /* Adds padding */
+    border-radius: 0.313rem;
+    /* Rounds the corners */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s;
+    /* Adds transition effect */
+}
+
+/* Hover effect for payment button */
+.payment-btn:hover {
+    background-color: #218838;
+    /* Changes background color on hover */
+}
+
+/* Styles for the total amount */
+.total-amount {
+    font-size: 1.2rem;
+    /* Sets the font size */
+    font-weight: bold;
+    /* Makes the text bold */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        /* Changes direction to column */
+        align-items: flex-start;
+        /* Aligns items to the start */
+    }
+
+    .cart-item-image {
+        width: 100%;
+        /* Sets the width to 100% */
+        margin-right: 0;
+        /* Removes margin on the right */
+        margin-bottom: 0.625rem;
+        /* Adds space at the bottom */
+    }
+
+    .quantity-controls {
+        margin-bottom: 0.625rem;
+        /* Adds space at the bottom */
+    }
+
+    .cart-summary {
+        flex-direction: column;
+        /* Changes direction to column */
+        align-items: flex-start;
+        /* Aligns items to the start */
+    }
+
+    .cart-summary .total-amount {
+        margin-top: 0.625rem;
+        /* Adds space at the top */
+    }
+
+    .clear-cart-btn {
+        margin-top: 1.25rem;
+        /* Adds space at the top */
+    }
+}
+

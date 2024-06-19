@@ -63,3 +63,58 @@
     cursor: pointer;
     /* Cursor style for interaction */
 }
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+    .category {
+        padding: 1rem;
+        /* Reducing padding for smaller screens */
+    }
+
+    .category-index {
+        flex-direction: column;
+        /* Stacking items vertically */
+        align-items: flex-start;
+        /* Aligning items to the start */
+        padding-top: 2rem;
+        /* Adjusting top padding */
+        padding-bottom: 2rem;
+        /* Adjusting bottom padding */
+    }
+
+    .category-sort button {
+        margin-top: 1rem;
+        /* Adding margin to the top */
+    }
+
+    .category-products>div {
+        flex: 1 0 48%;
+        /* Adjusting size to show 2 items per row */
+        margin: 0.5rem;
+        /* Adjusting margin for smaller screens */
+    }
+
+    .category-seemore button {
+        padding: 0.5rem 1rem;
+        /* Adjusting padding */
+        font-size: 0.875rem;
+        /* Adjusting font size */
+    }
+}
+
+/* Responsive design for screens smaller than 480px */
+@media (max-width: 480px) {
+    .category-products>div {
+        flex: 1 0 100%;
+        /* Adjusting size to show 1 item per row */
+        margin: 0.5rem 0;
+        /* Adjusting margin for smaller screens */
+    }
+
+    .category-seemore button {
+        width: 100%;
+        /* Making button full width */
+        box-sizing: border-box;
+        /* Ensuring padding is included in width */
+    }
+}

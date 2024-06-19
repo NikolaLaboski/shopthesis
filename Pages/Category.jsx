@@ -41,7 +41,7 @@ const Category = (props) => {
   // Rendering the Category component
   return (
     <div className="category">
-      <img src={props.banner} alt="Category Banner" /> {/* Displaying category banner */}
+      <img src={props.banner} alt="Category Banner" className='bannerWidth' /> {/* Displaying category banner */}
       <div className="category-index">
         <p>
           <span>Show 1-{Math.min(visibleProducts, sortedProducts.length)} of {sortedProducts.length} products</span>

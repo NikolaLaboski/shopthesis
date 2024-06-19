@@ -6,10 +6,9 @@ const AboutMe = () => {
       <h1>About Me</h1>
       <p>Hello, my name is Nikolche Laboski, I am interested in 
          Front-end development and data analytics, I tend to create successful, responsive,
-         stylish and easy to use web apps. Currently I accept freelance work but i would 
-         like to get the opportunity to work in a team. I am a part-time student at 
+         stylish and easy to use web apps. I am a part-time student at 
          St. Kliment Ohridski university in Bitola and this project is my diploma thesis.
-         Through my freelance experience I developed and maintained web sites and wrote
+         Through my work experience I developed and maintained web sites and wrote
          blog articles using WordPress. I helped clients to manage their businesses, 
          mainly Affiliate Marketing using Admitad affiliate program and selling AliExpress
          products using the alidropship WordPress plugin. Also developed and maintained

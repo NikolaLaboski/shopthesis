@@ -15,6 +15,11 @@
     /* Bottom padding for spacing */
 }
 
+.bannerWidth {
+    width: 100%;
+    height: auto;
+}
+
 /* Styling for the sort button within the index section */
 .category-sort button {
     background-color: #fff;
